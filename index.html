@@ -22,24 +22,24 @@
 <!--  Custom CSS Datei -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Document</title>
+  <title>ELC Engeneering</title>
 </head>
 <body>
 <!-- Navigation -->
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary pt-lg-3 sticky-top" data-bs-theme="dark">
+<header>
+<nav id="header-nav" class="navbar navbar-expand-lg bg-body-tertiary bg-primary pt-lg-3 sticky-top" data-bs-theme="dark">
   <div class="container">
     <a class="navbar-brand fs-3 " href="#">
 <!--   TODO   Zeichen oder kein Zeichen oder anderes Zeichen andere Farbe? -->
-    <i class="a-sharp fa-solid fa-caret-up"></i>
-      <span class="customgreen"> Simon Lechleitner</span></a>
+    <img id="logo-img" src="files/Logo_hell_mitRan_hell_gruen.png">
+      <span class="white navlogo"> <b>E<span class="green2" id="char1">L</span><span class="green1" id="char2" >C</span></b> Engeneering</span></a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <!--      me-auto als alternative -->
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <ul id="nav-liv" class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link mx-lg-2" aria-current="page" href="#" data-page="start">Start</a>
         </li>
@@ -69,13 +69,14 @@
     </div>
   </div>
 </nav>
+</header>
 <!-- TODO mail -->
 <!-- TODO Seiten sollen alle gleich anfangen mit Einzügen :( -->
 
-<div class="container" id="main-container"></div>
+<div id="main-container" class="container"></div>
 
 <!--	Footer -->
-<div class="footer ">&copy 2023 Simon Lechleitner</div>
+<div class="footer ">&copy 2023 ELC Engeneering</div>
 <!-- --------------------------------------------------------------------------------- -->
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>

@@ -1,12 +1,34 @@
 /* Allgemein */
 
-body {
+body, html {
   font-family: "Roboto";
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .customgreen {
   color: limegreen
+}
+
+.green1 {
+color: rgba(36,140,50,255)
+}
+
+.green2 {
+color: rgba(149,171,150,255)
+}
+
+
+
+#logo-img {
+    width: 35px;
+    height: 35px;
+    margin: 0px 2vw 3px 7px;
+}
+
+.navlogo {
+    margin-top: 200vh;
 }
 
 .navbar {
@@ -35,6 +57,26 @@ body {
   padding-top: 10vh;
 }
 
+/* Start */
+#frontpage-video {
+    width: 100%;
+    margin: 30px 5px 5px 5px;
+    align-content: center;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 1 32%;
+}
+
+.card:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
 /* TODO Hover*/
 .icon-link:active svg,
 .icon-link:hover svg {
@@ -43,16 +85,43 @@ body {
 
 /* Product */
 .card-image {
-	height: 200px;
-	background-size: cover;
-	background-position: center;
+	height: 25vh;
+
+	background-size: contain;
+    background: aquamarine;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
 }
 
-@media (max-width: 500px) {
-	.card-group {
-		display: flex;
-		flex-flow: column wrap;
-	}
+#tile_air {
+    background-image: url('../files/P_Icon_Luftschadstoffemissionen.png');
+    background-position: center
+}
+
+#tile_explo {
+    background-image: url('../files/P_Icon_Explosionsschutz.png');
+    background-position: center
+}
+
+#tile_ippc {
+    background-image: url('../files/P_Icon_IPPC.png');
+    background-position: center
+}
+
+#tile_schall {
+    background-image: url('../files/P_Icon_Schallemissionen.png');
+    background-position: center
+}
+
+#tile_seveso {
+    background-image: url('../files/P_Icon_SEVESO.png');
+    background-position: center
+}
+
+#tile_ueber {
+    background-image: url('../files/P_Icon_Überprüfungen.png');
+    background-position: center
 }
 
 /* Über mich */
@@ -89,4 +158,65 @@ body {
   left: 0;
   background-color:  #212529;
   margin-top: auto;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    #frontpage-video {
+        height: 300px;
+        padding-bottom: 0;
+    }
+
+    /*.card-group {*/
+    /*    display: flex;*/
+    /*    flex-flow: column wrap;*/
+    /*}*/
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #frontpage-video {
+        height: 250px;
+        padding-bottom: 0;
+    }
+
+    /*.card-group {*/
+    /*    display: flex;*/
+    /*    flex-flow: column wrap;*/
+    /*}*/
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    /*#frontpage-video {*/
+    /*    height: 200px;*/
+    /*    padding-bottom: 0;*/
+    /*}*/
+
+    /*.card-group {*/
+    /*    display: flex;*/
+    /*    flex-flow: column wrap;*/
+    /*}*/
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+    /*#frontpage-video {*/
+    /*    height: 150px;*/
+    /*    padding-bottom: 0;*/
+    /*}*/
+    /*.card-group {*/
+    /*    display: flex;*/
+    /*    flex-flow: column wrap;*/
+    /*}*/
+    /* Header */
+    .navbar-brand {
+        padding-top: 10px;
+        height: 50px;
+    }
+
+
+
 }
