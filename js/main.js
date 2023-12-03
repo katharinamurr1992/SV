@@ -20,7 +20,7 @@
 // // Link für überleitung zu Luft
 // $(document).ready(function(){
 //   $('#airlink').click(function(){
-//     $('#main-container').load('air.html');
+//     $('#main-container').load('tabair.html');
 //   });
 // });
 //
@@ -33,6 +33,7 @@
 
 function openTab(evt, tabId, buttonId) {
   var i, tabcontent, tabbuttons;
+  console.log("BBBB");
   tabcontent = document.getElementsByClassName("tab");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -40,6 +41,7 @@ function openTab(evt, tabId, buttonId) {
   tabbuttons = document.getElementsByClassName("tab-button");
   for (i = 0; i < tabbuttons.length; i++) {
     tabbuttons[i].classList.remove("active");
+    console.log(tabbuttons[i] + "AAA");
   }
   document.getElementById(tabId).style.display = "block";
   document.getElementById(buttonId).classList.add("active");
