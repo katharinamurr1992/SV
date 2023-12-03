@@ -34,6 +34,7 @@
     <img id="logo-img" src="files/Logo_hell_mitRan_hell_gruen.png">
       <span class="white navlogo"> <b>E<span class="green2" id="char1">L</span><span class="green1" id="char2" >C</span></b> Engeneering</span></a>
 
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -41,29 +42,29 @@
 <!--      me-auto als alternative -->
       <ul id="nav-liv" class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link mx-lg-2" aria-current="page" href="#" data-page="start">Start</a>
+          <a class="tab-button nav-link mx-lg-2 active " aria-current="page" href="#" id="tab-button-start">Start</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#products" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Produkte
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#sound" data-page="sound">Schall</a></li>
-            <li><a class="dropdown-item" href="#air" data-page="air">Luft</a></li>
-            <li><a class="dropdown-item" href="#security" data-page="security">Sicherheit</a></li>
+            <li><a class="dropdown-item" href="#sound" id="tab-button-sound" class="tab-button">Schall</a></li>
+            <li><a class="dropdown-item" href="#air" id="tab-button-air" class="tab-button">Luft</a></li>
+            <li><a class="dropdown-item" href="#security" id="tab-button-security" class="tab-button">Sicherheit</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-lg-2" href="#aboutme" data-page="aboutme">Über mich</a>
+          <a class="nav-link mx-lg-2" href="#aboutme" id="tab-button-aboutme" class="tab-button">Über mich</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-lg-2" href="#faq" data-page="faq">FAQ</a>
+          <a class="nav-link mx-lg-2" href="#faq" id="tab-button-faq" class="tab-button">FAQ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-lg-2" href="#dataprotection" data-page="dataprotection">Datenschutz</a>
+          <a class="nav-link mx-lg-2" href="#dataprotection" id="tab-button-dataprotection" class="tab-button">Datenschutz</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mx-lg-2" href="#impressum" data-page="impressum">Impressum</a>
+          <a class="nav-link mx-lg-2" href="#impressum" id="tab-button-impressum" class="tab-button">Impressum</a>
         </li>
       </ul>
     </div>
@@ -73,7 +74,19 @@
 <!-- TODO mail -->
 <!-- TODO Seiten sollen alle gleich anfangen mit Einzügen :( -->
 
-<div id="main-container" class="container"></div>
+<div id="main-container" class="container">
+
+<div class="tabs">
+  <div id="tabstart" class="tab active"></div>
+  <div id="tabsound" class="tab"></div>
+  <div id="tabair" class="tab"></div>
+  <div id="tabsecurity" class="tab active"></div>
+  <div id="tababoutme" class="tab"></div>
+  <div id="tabfaq" class="tab"></div>
+  <div id="tabdataprotection class=tab"></div>
+  <div id="tabimpressum" class="tab"></div>
+</div>
+</div>
 
 <!--	Footer -->
 <div class="footer ">&copy 2023 ELC Engeneering</div>
