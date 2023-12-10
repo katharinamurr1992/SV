@@ -62,3 +62,7 @@ function fetchContent(tabId) {
 window.addEventListener('DOMContentLoaded', function() {
   fetchContent('tabstart');
 });
+
+$('.nav-link').on('click',function() {
+  $('.navbar-collapse').collapse('hide');
+});
