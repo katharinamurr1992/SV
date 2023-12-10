@@ -29,10 +29,11 @@
 <header>
 <nav id="header-nav" class="navbar navbar-expand-lg bg-body-tertiary bg-primary pt-lg-3" data-bs-theme="dark">
   <div class="container">
-    <a class="navbar-brand fs-3 " href="#">
+    <a class="navbar-brand tab-button fs-3 " href="#" onclick="openTab(event, 'tabstart', 'tab-button-start')" >
 <!--   TODO   Zeichen oder kein Zeichen oder anderes Zeichen andere Farbe? -->
     <img id="logo-img" src="files/Logo_hell_mitRan_hell_gruen.png" alt="">
-      <span class="white navlogo"> <b>E<span class="green2" id="char1">L</span><span class="green1" id="char2" >C</span></b> Engineering</span></a>
+      <span class="white navlogo"> <b>E<span class="green2" id="char1">L</span><span class="green1" id="char2" >C</span></b> Engineering</span>
+    </a>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,17 +46,17 @@
           <a class="tab-button nav-link mx-lg-2 active " aria-current="page" href="#" id="tab-button-start" onclick="openTab(event, 'tabstart', 'tab-button-start')">Start</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="dropdown-toggle" id="product-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Produkte
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item tab-button " href="#" id="tab-button-sound" onclick="openTab(event, 'tabsound', 'tab-button-sound')">Schalltechnische Untersuchungen</a></li>
-            <li><a class="dropdown-item tab-button " href="#" id="tab-button-air" onclick="openTab(event, 'tabair', 'tab-button-air')" >Luftschadstofftechnische Untersuchungen</a></li>
-            <li><a class="dropdown-item tab-button " href="#" id="tab-button-explo" onclick="openTab(event, 'tabexplo', 'tab-button-explo')">Explosionsschutz</a></li>
-            <li><a class="dropdown-item tab-button " href="#" id="tab-button-check" onclick="openTab(event, 'tabcheck', 'tab-button-check')">Wiederkehrende
+            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-sound" onclick="openTab(event, 'tabsound', 'tab-button-sound')">Schalltechnische Untersuchungen</a></li>
+            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-air" onclick="openTab(event, 'tabair', 'tab-button-air')" >Luftschadstofftechnische Untersuchungen</a></li>
+            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-explo" onclick="openTab(event, 'tabexplo', 'tab-button-explo')">Explosionsschutz</a></li>
+            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-check" onclick="openTab(event, 'tabcheck', 'tab-button-check')">Wiederkehrende
               Überprüfungen von Anlagen</a></li>
-            <li><a class="dropdown-item tab-button " href="#" id="tab-button-seveso" onclick="openTab(event, 'tabseveso', 'tab-button-seveso')">SEVESO-Betriebe</a></li>
-            <li><a class="dropdown-item tab-button " href="#" id="tab-button-ippc" onclick="openTab(event, 'tabippc', 'tab-button-ippc')">IPPC-Anlagen</a></li>
+            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-seveso" onclick="openTab(event, 'tabseveso', 'tab-button-seveso')">SEVESO-Betriebe</a></li>
+            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-ippc" onclick="openTab(event, 'tabippc', 'tab-button-ippc')">IPPC-Anlagen</a></li>
 
           </ul>
         </li>

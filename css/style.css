@@ -10,6 +10,7 @@ body, html {
     flex-direction: column;
 }
 
+
 .customgreen {
   color: limegreen
 }
@@ -30,35 +31,58 @@ color: rgba(149,171,150,255)
     margin: 0 2vw 3px 7px;
 }
 
-.navlogo {
+#navlogo {
     margin-top: 200vh;
 }
 
 .navbar {
   border-bottom: 3px solid rgb(139, 150, 161);
+    max-height: 68px;
 }
 
 #header-nav {
+    /*top: 0;*/
     /*position: fixed;*/
-    /*width: 100%;*/
-    /*z-index: 9999;*/
-    /*height: 70px;*/
-    top: 0;
 }
 
 /* Navigation */
-.nav-link {
+.nav-link, #product-dropdown, .dropdown-item {
   color: white;
-}
+    cursor: pointer;
+    text-decoration: none;
 
-.nav-link {
-  cursor: pointer;
 }
 
 .nav-link:active,
-.nav-link:hover {
-  color: customgreen !important;
+.nav-link:hover, #product-dropdown:active, #product-dropdown:hover {
+  /*color: rgba(149,171,150,255);*/
+    font-weight: 800;
+    color: white;
+    background: none;
 }
+.dropdown-item.active{
+    font-weight: 800;
+    color: white;
+    background: none;
+    background-color: transparent;
+}
+
+.nav-link, #product-dropdown {
+    padding-top: 8px;
+}
+
+#product-dropdown, .tab-button {
+    padding: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*TODO -> nav ist nicht mehr fix*/
+
+
+
 
 .icon-link {
   color: white;
@@ -102,9 +126,9 @@ color: rgba(149,171,150,255)
 /* Product */
 .card-image {
 	height: 25vh;
-
 	background-size: contain;
-    background: rgba(149,171,150,255);
+    background: rgba(36,140,50,0.25);
+
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
@@ -210,6 +234,14 @@ color: rgba(149,171,150,255)
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+    #nav-liv {
+        margin-top: 15px;
+    }
+
+    .nav-item.dropdown, .tab-button {
+        padding-top: 5px;
+    }
+
     /*#frontpage-video {*/
     /*    height: 200px;*/
     /*    padding-bottom: 0;*/
@@ -223,7 +255,13 @@ color: rgba(149,171,150,255)
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+    #nav-liv {
+        margin-top: 15px;
+    }
 
+    .nav-item.dropdown, .tab-button {
+        padding-top: 5px;
+    }
     /*#frontpage-video {*/
     /*    height: 150px;*/
     /*    padding-bottom: 0;*/

@@ -41,7 +41,6 @@ function openTab(evt, tabId, buttonId) {
   tabbuttons = document.getElementsByClassName("tab-button");
   for (i = 0; i < tabbuttons.length; i++) {
     tabbuttons[i].classList.remove("active");
-    console.log(tabbuttons[i] + "AAA");
   }
   document.getElementById(tabId).style.display = "block";
   document.getElementById(buttonId).classList.add("active");
@@ -63,6 +62,7 @@ window.addEventListener('DOMContentLoaded', function() {
   fetchContent('tabstart');
 });
 
+//collapse navbar in smaller devices
 $('.nav-link').on('click',function() {
   $('.navbar-collapse').collapse('hide');
 });
