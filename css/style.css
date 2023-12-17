@@ -37,12 +37,15 @@ color: rgba(149,171,150,255)
 
 .navbar {
   border-bottom: 3px solid rgb(139, 150, 161);
-    max-height: 68px;
+     /*overflow: hidden;*/
+    /*position: fixed;*/
 }
 
 #header-nav {
-    /*top: 0;*/
-    /*position: fixed;*/
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
 }
 
 /* Navigation */
@@ -181,6 +184,7 @@ color: rgba(149,171,150,255)
 
 #main-container {
   min-height: 100vh;
+    margin-top: 70px;
 }
 
 .footer {
@@ -226,6 +230,19 @@ color: rgba(149,171,150,255)
         padding-bottom: 0;
     }
 
+    #product-dropdown,.tab-button {
+        padding: inherit;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #tab-button-aboutme, #tab-button-air, #tab-button-check, #tab-button-dataprotection, #tab-button-explo, #tab-button-faq, #tab-button-impressum {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
     /*.card-group {*/
     /*    display: flex;*/
     /*    flex-flow: column wrap;*/
@@ -241,6 +258,8 @@ color: rgba(149,171,150,255)
     .nav-item.dropdown, .tab-button {
         padding-top: 5px;
     }
+
+
 
     /*#frontpage-video {*/
     /*    height: 200px;*/
