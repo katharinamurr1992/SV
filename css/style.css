@@ -44,7 +44,6 @@ color: rgba(149,171,150,255)
 #header-nav {
     top: 0;
     position: fixed;
-    overflow: hidden;
     width: 100%;
 }
 
@@ -209,7 +208,7 @@ color: rgba(149,171,150,255)
         margin: 0px;
     }
 
-    #main-container {
+    #page-container {
         min-height: 100vh;
         width: 92%;
         max-width: 1030px;
