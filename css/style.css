@@ -1,58 +1,243 @@
 /* Allgemein */
 
-body {
+body, html {
   font-family: "Roboto";
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
+
 
 .customgreen {
   color: limegreen
 }
 
+.green1 {
+color: rgba(36,140,50,255)
+}
+
+.green2 {
+color: rgba(149,171,150,255)
+}
+
+
+
+#logo-img {
+    width: 35px;
+    height: 35px;
+    margin: 0 2vw 3px 7px;
+}
+
+#navlogo {
+    margin-top: 200vh;
+}
+
 .navbar {
   border-bottom: 3px solid rgb(139, 150, 161);
+     /*overflow: hidden;*/
+    /*position: fixed;*/
+    max-width: 100%;
+    /*background: linear-gradient( darkslategray, #212529);*/
+    background: linear-gradient( #0E452F, #212529);
+}
+
+#header-nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
 }
 
 /* Navigation */
-.nav-link {
+.nav-link, #product-dropdown, .dropdown-item {
   color: white;
+    cursor: pointer;
+    text-decoration: none;
+
 }
 
-.nav-link {
-  cursor: pointer;
+.dropdown-menu.show {
+    min-width: fit-content;
 }
 
 .nav-link:active,
-.nav-link:hover {
-  color: customgreen !important;
+.nav-link:hover, #product-dropdown:active, #product-dropdown:hover {
+  /*color: rgba(149,171,150,255);*/
+    font-weight: 800;
+    color: white;
+    background: none;
 }
+.dropdown-item.active{
+    font-weight: 800;<
+    color: white;
+    background: none;
+    background-color: transparent;
+}
+
+.nav-link, #product-dropdown {
+    padding-top: 8px;
+}
+
+#product-dropdown, .tab-button {
+    padding: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*TODO -> nav ist nicht mehr fix*/
+
+
+
 
 .icon-link {
   color: white;
 }
 
-#procucts, #aboutme, #contact, #dataprotection, #impressum, #air, #faq, #security, #sound, #start {
+#procucts, #aboutme, #contact, #dataprotection, #impressum, #air, #faq, #explo, #check, #seveso, #ipps, #sound, #start {
   padding-top: 10vh;
+}
+
+.headline {
+    background: rgba(14,69,39,0.3);
+    /*padding-right: 10vw;*/
+    padding-left: 10vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+}
+
+.h3-heading {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.h2-heading {
+    padding-bottom: 2vh;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10vh;
+    height: 10vh;
+    float: left;
+    margin: 0 0 8.8px;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 10px;
+}
+/* Start */
+#frontpage-video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 30px 5px 5px 5px;
+    align-content: center;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding-top: 10vh;
+}
+
+.parent-container-aboutme {
+    padding: 20px ;
+    border: 100px;
+    background:  linear-gradient( #0E452F, #212529);
+}
+
+/*img Breite*/
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+/*.card {*/
+/*    flex: 1 0 auto;*/
+/*}*/
+
+.card {
+    flex: 0 1 32%;
+}
+
+.card:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
 }
 
 /* TODO Hover*/
 .icon-link:active svg,
 .icon-link:hover svg {
-  color: customgreen;
+  color: rgba(36,140,50,255);
 }
 
 /* Product */
 .card-image {
-	height: 200px;
-	background-size: cover;
-	background-position: center;
+	height: 25vh;
+	background-size: contain;
+    background: green;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
 }
 
-@media (max-width: 500px) {
-	.card-group {
-		display: flex;
-		flex-flow: column wrap;
-	}
+.about-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+#tile_air {
+    background-image: url('../files/P_Icon_Luftschadstoffemissionen.png');
+    background-position: center
+}
+
+#tile_explo {
+    background-image: url('../files/P_Icon_Explosionsschutz.png');
+    background-position: center;
+
+}
+
+#tile_ippc {
+    background-image: url('../files/P_Icon_IPPC.png');
+    background-position: center;
+}
+
+#tile_sound {
+    background-image: url('../files/P_Icon_Schallemissionen.png');
+    background-position: center;
+}
+
+#tile_seveso {
+    background-image: url('../files/P_Icon_SEVESO.png');
+    background-position: center;
+}
+
+#tile_check {
+    background-image: url('../files/P_Icon_Überprüfungen.png');
+    background-position: center;
 }
 
 /* Über mich */
@@ -70,23 +255,158 @@ body {
 
 /* Footer */
 
-.main-container {
+#main-container {
   min-height: 100vh;
+    margin-top: 70px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
 }
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.category-container {
+    max-width: 100%;
+    width: 100%;
+    /*box-sizing: border-box;*/
+    padding: 0px;
 }
+
+.leistungs-container {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: lightgrey;
+}
+
+.default-container {
+    padding-top: 7vh;
+    padding-bottom: 8vh;
+    margin-left : auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.page-container {
+    min-height: 100vh;
+    width: 92%;
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .footer {
   font-family: sans-serif;
 	font-size: 1rem;
 	text-align: center;
 	border-top: 1px solid #888;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   color: grey;
   left: 0;
-  background-color:  #212529;
+  background: linear-gradient( #212529, #0E452F);
   margin-top: auto;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    #frontpage-video {
+        height: 290px;
+        padding-bottom: 0;
+        margin: 0px;
+    }
+
+    .page-container {
+        min-height: 100vh;
+        width: 92%;
+        max-width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*.card-group {*/
+    /*    display: flex;*/
+    /*    flex-flow: column wrap;*/
+    /*}*/
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #frontpage-video {
+        height: 250px;
+        padding-bottom: 0;
+    }
+
+    #product-dropdown,.tab-button {
+        padding: inherit;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #tab-button-aboutme, #tab-button-air, #tab-button-check, #tab-button-dataprotection, #tab-button-explo, #tab-button-faq, #tab-button-impressum {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    /*.card-group {*/
+    /*    display: flex;*/
+    /*    flex-flow: column wrap;*/
+    /*}*/
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    #nav-liv {
+        margin-top: 15px;
+    }
+
+    .nav-item.dropdown, .tab-button {
+        padding-top: 5px;
+    }
+
+
+
+    /*#frontpage-video {*/
+    /*    height: 200px;*/
+    /*    padding-bottom: 0;*/
+    /*}*/
+
+    /*.card-group {*/
+    /*    display: flex;*/
+    /*    flex-flow: column wrap;*/
+    /*}*/
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+    #nav-liv {
+        margin-top: 15px;
+    }
+
+    .nav-item.dropdown, .tab-button {
+        padding-top: 5px;
+    }
+    /*#frontpage-video {*/
+    /*    height: 150px;*/
+    /*    padding-bottom: 0;*/
+    /*}*/
+    /*.card-group {*/
+    /*    display: flex;*/
+    /*    flex-flow: column wrap;*/
+    /*}*/
+    /* Header */
+    .navbar-brand {
+        padding-top: 10px;
+        height: 50px;
+    }
+
+
+
+}
+
+* {
+    max-width: 100%;
 }
