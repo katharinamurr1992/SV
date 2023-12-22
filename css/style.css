@@ -8,6 +8,7 @@ body, html {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 
@@ -39,6 +40,9 @@ color: rgba(149,171,150,255)
   border-bottom: 3px solid rgb(139, 150, 161);
      /*overflow: hidden;*/
     /*position: fixed;*/
+    max-width: 100%;
+    /*background: linear-gradient( darkslategray, #212529);*/
+    background: linear-gradient( #0E452F, #212529);
 }
 
 #header-nav {
@@ -55,6 +59,10 @@ color: rgba(149,171,150,255)
 
 }
 
+.dropdown-menu.show {
+    min-width: fit-content;
+}
+
 .nav-link:active,
 .nav-link:hover, #product-dropdown:active, #product-dropdown:hover {
   /*color: rgba(149,171,150,255);*/
@@ -63,7 +71,7 @@ color: rgba(149,171,150,255)
     background: none;
 }
 .dropdown-item.active{
-    font-weight: 800;
+    font-weight: 800;<
     color: white;
     background: none;
     background-color: transparent;
@@ -94,11 +102,68 @@ color: rgba(149,171,150,255)
   padding-top: 10vh;
 }
 
+.headline {
+    background: rgba(14,69,39,0.3);
+    /*padding-right: 10vw;*/
+    padding-left: 10vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+}
+
+.h3-heading {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.h2-heading {
+    padding-bottom: 2vh;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 10vh;
+    height: 10vh;
+    float: left;
+    margin: 0 0 8.8px;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    gap: 10px;
+}
 /* Start */
 #frontpage-video {
     width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     margin: 30px 5px 5px 5px;
     align-content: center;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding-top: 10vh;
+}
+
+.parent-container-aboutme {
+    padding: 20px ;
+    border: 100px;
+    background:  linear-gradient( #0E452F, #212529);
+}
+
+/*img Breite*/
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
 }
 
 .card-deck {
@@ -129,11 +194,19 @@ color: rgba(149,171,150,255)
 .card-image {
 	height: 25vh;
 	background-size: contain;
-    background: rgba(36,140,50,0.25);
-
+    background: green;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
+
+}
+
+.about-image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
 }
 
 #tile_air {
@@ -143,27 +216,28 @@ color: rgba(149,171,150,255)
 
 #tile_explo {
     background-image: url('../files/P_Icon_Explosionsschutz.png');
-    background-position: center
+    background-position: center;
+
 }
 
 #tile_ippc {
     background-image: url('../files/P_Icon_IPPC.png');
-    background-position: center
+    background-position: center;
 }
 
 #tile_sound {
     background-image: url('../files/P_Icon_Schallemissionen.png');
-    background-position: center
+    background-position: center;
 }
 
 #tile_seveso {
     background-image: url('../files/P_Icon_SEVESO.png');
-    background-position: center
+    background-position: center;
 }
 
 #tile_check {
     background-image: url('../files/P_Icon_Überprüfungen.png');
-    background-position: center
+    background-position: center;
 }
 
 /* Über mich */
@@ -184,7 +258,42 @@ color: rgba(149,171,150,255)
 #main-container {
   min-height: 100vh;
     margin-top: 70px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px;
 }
+
+.category-container {
+    max-width: 100%;
+    width: 100%;
+    /*box-sizing: border-box;*/
+    padding: 0px;
+}
+
+.leistungs-container {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: lightgrey;
+}
+
+.default-container {
+    padding-top: 7vh;
+    padding-bottom: 8vh;
+    margin-left : auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.page-container {
+    min-height: 100vh;
+    width: 92%;
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .footer {
   font-family: sans-serif;
@@ -195,7 +304,7 @@ color: rgba(149,171,150,255)
   width: 100%;
   color: grey;
   left: 0;
-  background-color:  #212529;
+  background: linear-gradient( #212529, #0E452F);
   margin-top: auto;
 }
 
@@ -208,7 +317,7 @@ color: rgba(149,171,150,255)
         margin: 0px;
     }
 
-    #page-container {
+    .page-container {
         min-height: 100vh;
         width: 92%;
         max-width: 1030px;
@@ -296,4 +405,8 @@ color: rgba(149,171,150,255)
 
 
 
+}
+
+* {
+    max-width: 100%;
 }
