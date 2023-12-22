@@ -2,131 +2,92 @@
 <!-- Website Infos -->
 
 
-
 <div id="frontpage-video" class="parent-container d-flex ">
-  <video class="img-fluid" autoplay loop muted>
-    <source
-            src="files/video.mp4"
-            type="video/mp4"
-    />
-  </video>
+    <video class="img-fluid" autoplay loop muted>
+        <source
+                src="files/video.mp4"
+                type="video/mp4"
+        />
+    </video>
 </div>
 
 <div id="site-container" class="container page-container">
-  <div id="start" class="container ">
-  <!--  <h1 class="" customgreen fw-bold>.. Sachverständiger</h1>-->
-    <p>
-    Wir Bieten Ihnen Leistungen für gewerbe- und abfallrechtliche Verfahren. Mit unserem weitreichenden Leistungspaket wickeln wir für Sie das Behördenverfahren
-    unkompliziert und rasch ab und unterstützen Sie beim Erstellen von gesetzlich erforderlichen Unterlagen.
-    </p>
-  </div>
+       <!--  <h1 class="" customgreen fw-bold>.. Sachverständiger</h1>-->
+        <p>
+            Wir Bieten Ihnen Leistungen für gewerbe- und abfallrechtliche Verfahren. Mit unserem weitreichenden
+            Leistungspaket wickeln wir für Sie das Behördenverfahren
+            unkompliziert und rasch ab und unterstützen Sie beim Erstellen von gesetzlich erforderlichen Unterlagen.
+        </p>
 
-<!-- TODO soll da ein Bild rein für jedes oder lieber oben ein Bild und darunter Text?-->
-<!-- Produktübersicht/Leistungsübersicht -->
-
-<!-- Variante 1-->
-<!--<div id="products" class="parent-container-aboutme d-flex " style="border: 20px; background: rgb(36, 64, 64) ">-->
-<!--  <div class="card"-->
-<!--    style="float:left; height: 50vh; width: 50vw; background: limegreen; margin-top: 5vh; margin-left: 15vw; margin-right: 1vh; padding: 20px">-->
-<!--    <div class="row align-items-center">-->
-<!--      <div class="col">-->
-<!--        <h1 class="fw-bold">Luft...</h1>-->
-<!--        <p>Variante 1: Hier steht etwas zu Luft</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="card"-->
-<!--    style="float:left; height: 50vh;  width: 50vw; background: limegreen; margin-top: 5vh; margin-left: 1vh; margin-right: 1vh; padding: 20px">-->
-<!--    <div class="row align-items-center">-->
-<!--      <div class="col">-->
-<!--        <h1 class="fw-bold">Schall...</h1>-->
-<!--        <p>Hier steht etwas zu Schall</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-
-<!--  <div class="card"-->
-<!--    style="float:left; height: 50vh;  width: 50vw; background: limegreen; margin-top: 5vh; margin-left: 1vh; margin-right: 15vw; padding: 20px">-->
-<!--    <div class="row align-items-center">-->
-<!--      <div class="col">-->
-<!--        <h1 class="fw-bold">Sicherheits...</h1>-->
-<!--        <p>Hier steht etwas zu Sicherheit</p>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-<!--TODO gleich hohe cards -->
-  <div id="procucts" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-sm-2 row-cols-xs-1 card-deck">
-  <div class="col mb-4 align-items-stretch">
-    <div class="card border-0 rounded-0">
-      <a id=soundlink onclick="openTab(event, 'tabsound', 'tab-button-sound')">
-        <div class="card-image" id="tile_sound"></div>
-        <div class="card-body">
-          <h5  class="card-title">Schalltechnische Untersuchungen</h5>
+    <div id="procucts" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-sm-2 row-cols-xs-1 card-deck">
+        <div class="col mb-4 align-items-stretch">
+            <div class="card border-0 rounded-0">
+                <a id=soundlink onclick="openTab(event, 'tabsound', 'tab-button-sound')">
+                    <div class="card-image" id="tile_sound"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Schalltechnische Untersuchungen</h5>
+                    </div>
+                </a>
+            </div>
         </div>
-      </a>
-    </div>
-  </div>
-  <div class="col mb-4 align-items-stretch">
-    <div class="card border-0 rounded-0">
-      <a id=explolink onclick="openTab(event, 'tabexplo', 'tab-button-explo')">
-        <div class="card-image" id="tile_explo" ></div>
-        <div class="card-body">
-          <h5 class="card-title">Explosionsschutz</h5>
-        </div>
+        <div class="col mb-4 align-items-stretch">
+            <div class="card border-0 rounded-0">
+                <a id=explolink onclick="openTab(event, 'tabexplo', 'tab-button-explo')">
+                    <div class="card-image" id="tile_explo"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Explosionsschutz</h5>
+                    </div>
 
-      </a>
-    </div>
-  </div>
-  <div class="col mb-4 align-items-stretch" >
-    <div class="card border-0 rounded-0">
-      <a id=airlink onclick="openTab(event, 'tabair', 'tab-button-air')">
-        <div class="card-image"  id="tile_air"></div>
-        <div class="card-body">
-          <h5 class="card-title">Luftschadstofftechnische
-            Untersuchungen</h5>
+                </a>
+            </div>
         </div>
+        <div class="col mb-4 align-items-stretch">
+            <div class="card border-0 rounded-0">
+                <a id=airlink onclick="openTab(event, 'tabair', 'tab-button-air')">
+                    <div class="card-image" id="tile_air"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Luftschadstofftechnische
+                            Untersuchungen</h5>
+                    </div>
 
-      </a>
-    </div>
-  </div>
-  <div class="col mb-4 align-items-stretch">
-    <div class="card border-0 rounded-0">
-      <a id=checklink onclick="openTab(event, 'tabcheck', 'tab-button-check')">
-        <div class="card-image" id="tile_check"></div>
-        <div class="card-body">
-          <h5 class="card-title">Wiederkehrende
-            Überprüfungen von Anlagen</h5>
+                </a>
+            </div>
         </div>
+        <div class="col mb-4 align-items-stretch">
+            <div class="card border-0 rounded-0">
+                <a id=sevesolink onclick="openTab(event, 'tabseveso', 'tab-button-seveso')">
+                    <div class="card-image" id="tile_seveso"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">SEVESO-Betriebe</h5>
+                    </div>
 
-      </a>
-    </div>
-  </div>
-  <div class="col mb-4 align-items-stretch">
-    <div class="card border-0 rounded-0">
-      <a id=sevesolink onclick="openTab(event, 'tabseveso', 'tab-button-seveso')">
-        <div class="card-image" id="tile_seveso"></div>
-        <div class="card-body">
-          <h5 class="card-title">SEVESO-Betriebe</h5>
+                </a>
+            </div>
         </div>
+        <div class="col mb-4 align-items-stretch">
+            <div class="card border-0 rounded-0">
+                <a id=checklink onclick="openTab(event, 'tabcheck', 'tab-button-check')">
+                    <div class="card-image" id="tile_check"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Wiederkehrende
+                            Überprüfungen</h5>
+                    </div>
 
-      </a>
-    </div>
-  </div>
-  <div class="col mb-4 align-items-stretch">
-    <div class="card border-0 rounded-0">
-      <a id=ippclink onclick="openTab(event, 'tabippc', 'tab-button-ippc')">
-        <div class="card-image" id="tile_ippc"></div>
-        <div class="card-body">
-          <h5 class="card-title">IPPC-Anlagen</h5>
+                </a>
+            </div>
         </div>
+        <div class="col mb-4 align-items-stretch">
+            <div class="card border-0 rounded-0">
+                <a id=ippclink onclick="openTab(event, 'tabippc', 'tab-button-ippc')">
+                    <div class="card-image" id="tile_ippc"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">IPPC-Anlagen</h5>
+                    </div>
 
-      </a>
+                </a>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
 
 </div>

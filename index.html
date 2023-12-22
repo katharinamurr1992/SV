@@ -22,7 +22,7 @@
 <!--  Custom CSS Datei -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>ELC Engineering</title>
+  <title>LS2 Engineering</title>
 </head>
 <body>
 <!-- Navigation -->
@@ -31,8 +31,8 @@
   <div class="container">
     <a class="navbar-brand tab-button fs-3 " href="#" onclick="openTab(event, 'tabstart', 'tab-button-start')" >
 <!--   TODO   Zeichen oder kein Zeichen oder anderes Zeichen andere Farbe? -->
-    <img id="logo-img" src="files/Logo_hell_mitRan_hell_gruen.png" alt="">
-      <span class="white navlogo"> <b>E<span class="green2" id="char1">L</span><span class="green1" id="char2" >C</span></b> Engineering</span>
+    <img id="logo-img" src="files/P_Logo_LS2_500px_weiss.png" alt="">
+      <span class="white navlogo"> <b>LS<span class="superscript">2</span></b> Engineering</span>
     </a>
 
 
@@ -70,7 +70,7 @@
           <a class="tab-button nav-link mx-lg-2" href="#" id="tab-button-dataprotection" onclick="openTab(event, 'tabdataprotection', 'tab-button-dataprotection')">Datenschutz</a>
         </li>
         <li class="nav-item">
-          <a class="tab-button nav-link mx-lg-2" href="#" id="tab-button-impressum" onclick="openTab(event, 'tabimpressum', 'tab-button-impressum')">Impressum</a>
+          <a class="tab-button nav-link mx-lg-2" href="#" id="tab-button-contact" onclick="openTab(event, 'tabcontact', 'tab-button-contact')">Kontakt</a>
         </li>
       </ul>
     </div>
@@ -94,6 +94,7 @@
   <div id="tababoutme" class="tab"></div>
   <div id="tabfaq" class="tab"></div>
   <div id="tabdataprotection" class="tab"></div>
+  <div id="tabcontact" class="tab"></div>
   <div id="tabimpressum" class="tab"></div>
 </div>
 </div>
@@ -101,7 +102,14 @@
 <!--TODO FAQ Produkte und datenschutz sind anders-->
 
 <!--	Footer -->
-<div class="footer ">&copy 2023 ELC Engineering</div>
+<div class="footer ">
+  <p class="footer-p footer-contact">
+    <a class="mx-lg-2" href="#" id="tab-button-impressum" onclick="openTab(event, 'tabimpressum', 'tab-button-impressum')">Impressum</a> &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-phone"></i> +43 676 749 29 99 &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-envelope"></i> sv-lechleiter@outlook.com
+  </p>
+  <p class="footer-p">
+  &copy 2023 LS² Engineering
+  </p>
+</div>
 <!-- --------------------------------------------------------------------------------- -->
 <!-- JQuery -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
