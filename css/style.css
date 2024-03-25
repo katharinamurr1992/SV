@@ -150,7 +150,7 @@ body, html {
     width: 10vh;
     height: 10vh;
     float: left;
-    margin: 0 0 8.8px;
+    margin: 0 0 0 1vw;
 }
 
 .column {
@@ -201,13 +201,13 @@ body, html {
 /*    flex: 1 0 auto;*/
 /*}*/
 
-.card {
+.custom-card {
     flex: 0 1 32%;
     width: 60vw;
     margin: auto;
 }
 
-.card:hover {
+.custom-card:hover {
     box-shadow: 0 1px 5px 1px #cccccc;
 }
 
@@ -218,6 +218,29 @@ body, html {
 }
 /* Process */
 /* The actual timeline (the vertical ruler) */
+
+.custom-image {
+    height: 25vh;
+    position: relative;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    align-content: center;
+}
+
+.card-process {
+    flex: 0 1 32%;
+    width: 100%;
+    margin: auto;
+    background: white;
+}
+
+.card-process:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+
 
 #process-background {
     background-color: #c7d1d1;
@@ -320,7 +343,7 @@ body, html {
 }
 
 /* Product */
-.card-image {
+.custom-card-image {
     height: 25vh;
     background-size: contain;
     background-repeat: no-repeat;
@@ -329,6 +352,24 @@ body, html {
     overflow: hidden;
 
 }
+
+.custom-navbox-collapse {
+    border: 2px solid #bcc0c4;
+    background-color:#bcc0c4;
+}
+
+.mw-customtoggle-toggle {
+    float:right;
+}
+
+
+
+/* Data Protection */
+.blocksatz {
+    text-align: justify;
+}
+
+
 
 .row {
     margin: auto;
@@ -378,15 +419,59 @@ body, html {
 /* Über mich */
 .about-image {
     width: 300px;
-    height: 300px;
+    height: 350px;
     background-size: cover;
     background-position: center;
 }
 
-/* FAQ */
-.accordion {
-    --bs-accordion-active-bg: limegreen;
+.about-image-simon {
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+    background-color: white;
 }
+
+.custom-column {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+    /*background-color: #c7d1d1;*/
+    padding: 20px;
+}
+
+.custom-column-example {
+    grid-template-columns: 10% 90%;
+    width: 100%;
+    padding: 0;
+}
+
+.custom-column-example-body {
+    grid-template-columns: 10% 90%;
+
+}
+
+.accordion-flush, .accordion-button, .custom-column-example-body, .accordion-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+    background-color: white;
+    color: black;
+    bs-accordion-btn-focus-border-color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: white;
+}
+
+.custom-h3-example, .custom-div-example {
+    display: grid;
+    align-content: center;
+    margin: 0;
+}
+
 
 /* Footer */
 
