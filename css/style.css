@@ -375,13 +375,6 @@ body, html {
     margin: auto;
 }
 
-.about-image {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-}
 
 #tile_air {
     background-image: url('../files/Bild_03_Luft.png');
@@ -422,6 +415,7 @@ body, html {
     height: 350px;
     background-size: cover;
     background-position: center;
+    border-radius: 50%;
 }
 
 .about-image-simon {
