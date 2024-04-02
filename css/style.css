@@ -466,6 +466,23 @@ body, html {
     margin: 0;
 }
 
+
+.contact-info {
+    display:inline-block;
+    width:80px;
+}
+
+.ref-contact {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ref-contact:hover {
+    text-decoration: underline;
+}
+
+
+
 /* contact */
 #contact-button-send {
     background-color: #0E452F;
@@ -528,6 +545,7 @@ body, html {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /******** custom things ********/
 .custom-p-impressum {
