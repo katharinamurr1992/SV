@@ -247,6 +247,7 @@ body, html {
 .custom-card {
     flex: 0 1 32%;
     width: 60vw;
+    height: 100%;
     margin: auto;
 }
 
@@ -259,6 +260,19 @@ body, html {
 .icon-link:hover svg {
     color: rgba(36, 140, 50, 255);
 }
+
+.custom-column-ing {
+    display: grid;
+    grid-template-columns: 76% 20%;
+    gap: 30px;
+    /*background-color: #c7d1d1;*/
+    padding: 20px;
+
+}
+
+
+
+
 /* Process */
 /* The actual timeline (the vertical ruler) */
 
@@ -281,6 +295,11 @@ body, html {
 
 .card-process:hover {
     box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+.card-titel, .h5, h5 {
+    font-size: 1.2rem;
+
 }
 
 
@@ -515,7 +534,7 @@ body, html {
     border-color: white;
 }
 
-.custom-h3-example, .custom-div-example {
+.custom-h3-example, .custom-div-example, .custom-div-ing {
     display: grid;
     align-content: center;
     margin: 0;
