@@ -139,8 +139,6 @@ body, html {
     margin-right: 10px;
 }
 
-/*TODO -> nav ist nicht mehr fix*/
-
 
 .icon-link {
     color: white;
@@ -255,7 +253,6 @@ body, html {
     box-shadow: 0 1px 5px 1px rgb(139, 150, 161);
 }
 
-/* TODO Hover*/
 .icon-link:active svg,
 .icon-link:hover svg {
     color: rgba(36, 140, 50, 255);
