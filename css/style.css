@@ -144,7 +144,7 @@ body, html {
     color: white;
 }
 
-#procucts, #aboutme, #contact, #dataprotection, #contact, #air, #faq, #explo, #check, #seveso, #ippc, #sound, #start, #impressum {
+#procucts, #aboutme, #contact, #dataprotection, #contact, #air, #process, #explo, #check, #seveso, #ippc, #sound, #start, #impressum {
     padding-top: 10vh;
 }
 
@@ -711,7 +711,7 @@ body, html {
         margin-right: 5px;
     }
 
-    #tab-button-aboutme, #tab-button-air, #tab-button-check, #tab-button-dataprotection, #tab-button-explo, #tab-button-faq, #tab-button-contact {
+    #tab-button-aboutme, #tab-button-air, #tab-button-check, #tab-button-dataprotection, #tab-button-explo, #tab-button-process, #tab-button-contact {
         padding-left: 2px;
         padding-right: 2px;
     }

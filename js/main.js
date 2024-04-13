@@ -33,7 +33,6 @@
 
 function openTab(evt, tabId, buttonId) {
   var i, tabcontent, tabbuttons;
-  console.log("BBBB");
   tabcontent = document.getElementsByClassName("tab");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -65,5 +64,15 @@ window.addEventListener('DOMContentLoaded', function() {
 //collapse navbar in smaller devices
 $('.nav-link').on('click',function() {
   $('.navbar-collapse').collapse('hide');
+});
+
+// load navbar on every page
+$.get("navigation.html", function(data){
+  $("#nav-placeholder").replaceWith(data);
+});
+
+// load footer on every page
+$.get("footer.html", function(data){
+  $("#footer-placeholder").replaceWith(data);
 });
 
