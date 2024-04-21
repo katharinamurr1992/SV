@@ -700,8 +700,8 @@ body, html {
     }
 
     .icon {
-        width: 8vh;
-        height: 8vh;
+        width: 6vh;
+        height: 6vh;
     }
 
     /*.card-group {*/
@@ -745,6 +745,10 @@ body, html {
         padding-top: 5px;
     }
 
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Definiert drei Spalten mit gleicher Breite */
+    }
+
 
     /*#frontpage-video {*/
     /*    height: 200px;*/
@@ -766,7 +770,7 @@ body, html {
         margin-bottom: 0.4rem!important;
     }
 
-    .custom-column-example {
+    .custom-column-example, .custom-column-example-body {
         grid-template-columns: 100%;
     }
 
@@ -778,6 +782,9 @@ body, html {
 
     .nav-item.dropdown, .tab-button {
         padding-top: 5px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Definiert drei Spalten mit gleicher Breite */
     }
 
     /*#frontpage-video {*/
