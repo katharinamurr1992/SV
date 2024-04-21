@@ -699,6 +699,11 @@ body, html {
         margin-right: auto;
     }
 
+    .icon {
+        width: 8vh;
+        height: 8vh;
+    }
+
     /*.card-group {*/
     /*    display: flex;*/
     /*    flex-flow: column wrap;*/
