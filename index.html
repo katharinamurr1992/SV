@@ -1,119 +1,153 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Flavicon-->
+    <!-- link rel="shortcut icon" htref="flavicon.ico" type="assets/x-icon" />-->
+    <!--  FontAwsome -->
+    <!--  <script src="https://kit.fontawesome.com/ab01f499c0.js" crossorigin="anonymous"></script>-->
+    <!--  Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--  Custom CSS Datei -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JQuery -->
+    <script defer src="js/jquery-3.7.1.min.js"></script>
+    <!--Bootstrap JS-->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script defer src="js/main.js"></script>
+    <script defer src="style/white-flash-fix.js"></script>
 
-  <!-- Flavicon-->
-  <!-- link rel="shortcut icon" htref="flavicon.ico" type="assets/x-icon" />-->
-
-<!--  FontAwsome -->
-<!--  <script src="https://kit.fontawesome.com/ab01f499c0.js" crossorigin="anonymous"></script>-->
-
-<!--  Bootstrap css-->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-<!--  Custom CSS Datei -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- JQuery -->
-  <script defer src="js/jquery-3.7.1.min.js"></script>
-
-
-  <!--Bootstrap JS-->
-  <script defer src="js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
-  <script defer src="js/main.js"></script>
-
-  <title>LS2 Engineering</title>
+    <title>LS2 Engineering</title>
 </head>
 <body>
 <!-- Navigation -->
 <header>
-<nav id="header-nav" class="navbar sticky-top navbar-expand-lg bg-body-tertiary bg-primary pt-lg-3" data-bs-theme="dark">
-  <div class="container">
-    <a class="navbar-brand tab-button fs-3 " href="#" onclick="openTab(event, 'tabstart', 'tab-button-start')" >
-    <img id="logo-img" src="files/P_Logo_LS2_500px_weiss.png" alt="">
-      <span class="white navlogo"> <b>LS2</b> Engineering</span>
-    </a>
-
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-<!--      me-auto als alternative -->
-      <ul id="nav-liv" class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="tab-button nav-link mx-lg-2 active " aria-current="page" href="#" id="tab-button-start" onclick="openTab(event, 'tabstart', 'tab-button-start')">Start</a>
-        </li>
-        <li class="nav-item">
-          <a class="tab-button nav-link mx-lg-2" href="#" id="tab-button-process" onclick="openTab(event, 'tabprocess', 'tab-button-process')">Projektphasen</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="dropdown-toggle" id="product-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Leistungen
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-sound" onclick="openTab(event, 'tabsound', 'tab-button-sound')">Schalltechnische Untersuchungen</a></li>
-            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-air" onclick="openTab(event, 'tabair', 'tab-button-air')" >Luftschadstofftechnische Untersuchungen</a></li>
-            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-explo" onclick="openTab(event, 'tabexplo', 'tab-button-explo')">Explosionsschutz</a></li>
-            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-check" onclick="openTab(event, 'tabcheck', 'tab-button-check')">Wiederkehrende
-              Überprüfungen von Anlagen</a></li>
-            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-seveso" onclick="openTab(event, 'tabseveso', 'tab-button-seveso')">SEVESO-Betriebe</a></li>
-            <li><a class="dropdown-item tab-button nav-link " href="#" id="tab-button-ippc" onclick="openTab(event, 'tabippc', 'tab-button-ippc')">IPPC-Anlagen</a></li>
-
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="tab-button nav-link mx-lg-2" href="#" id="tab-button-aboutme" onclick="openTab(event, 'tababoutme', 'tab-button-aboutme')">Über uns</a>
-        </li>
-
-<!--        <li class="nav-item">-->
-<!--          <a class="tab-button nav-link mx-lg-2" href="#" id="tab-button-dataprotection" onclick="openTab(event, 'tabdataprotection', 'tab-button-dataprotection')">Datenschutz</a>-->
-<!--        </li>-->
-        <li class="nav-item">
-          <a class="tab-button nav-link mx-lg-2" href="#" id="tab-button-contact" onclick="openTab(event, 'tabcontact', 'tab-button-contact')">Kontakt</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <div id="nav-placeholder"></div>
 </header>
 
 <div id="main-container" class="container">
 
-<div class="tabs">
-  <div id="tabstart" class="tab active"></div>
-  <div id="tabexplo" class="tab"></div>
-  <div id="tabcheck" class="tab"></div>
-  <div id="tabseveso" class="tab"></div>
-  <div id="tabippc" class="tab"></div>
-  <div id="tabsound" class="tab"></div>
-  <div id="tabair" class="tab"></div>
-  <div id="tabsecurity" class="tab"></div>
-  <div id="tababoutme" class="tab"></div>
-  <div id="tabprocess" class="tab"></div>
-  <div id="tabdataprotection" class="tab"></div>
-  <div id="tabcontact" class="tab"></div>
-  <div id="tabimpressum" class="tab"></div>
+    <!-- Image Slider TODO wollen wir sowas -->
+    <!-- Website Infos -->
+
+
+    <div id="frontpage-video" class="parent-container d-flex ">
+        <video class="img-fluid" autoplay loop muted>
+            <source
+                    src="files/video.mp4"
+                    type="video/mp4"
+            />
+        </video>
+    </div>
+
+    <div id="site-container" class="container page-container">
+        <!--  <h1 class="" customgreen fw-bold>.. Sachverständiger</h1>-->
+
+        <div>
+            <h1 class="h3-heading-padding-top">
+                LS2 Engineering - Das Ingenieurbüro für Ihre Projekte
+            </h1>
+        </div>
+        <div class="column custom-column-ing ">
+            <div>
+                <p class="blocksatz">
+                    Wir bieten Ihnen Leistungen für gewerbe-, abfall- und wasserrechtliche Verfahren sowie
+                    MinroG-Verfahren. Mit unserem weitreichenden Leistungspaket wickeln wir für Sie das
+                    Behördenverfahren unkompliziert und rasch ab und unterstützen Sie beim erstellen von gesetzlich
+                    erforderlichen Unterlagen.
+                </p>
+            </div>
+
+            <div class="custom-div-ing">
+                <img src="files/ingbueros-logo-2018.jpg" alt="" class="inglogo">
+            </div>
+        </div>
+
+        <div id="procucts" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-sm-2 row-cols-xs-1 card-deck">
+            <div class="col mb-4 align-items-stretch">
+                <div class="card custom-card border-0 rounded-0">
+                    <a id=soundlink onclick="openTab(event, 'tabsound', 'tab-button-sound')">
+                        <div class="card-image custom-card-image" id="tile_sound"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Schalltechnische Untersuchungen</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col mb-4 align-items-stretch">
+                <div class="card custom-card border-0 rounded-0">
+                    <a id=explolink onclick="openTab(event, 'tabexplo', 'tab-button-explo')">
+                        <div class="card-image custom-card-image" id="tile_explo"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Explosionsschutz</h5>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+            <div class="col mb-4 align-items-stretch">
+                <div class="card custom-card border-0 rounded-0">
+                    <a id=airlink onclick="openTab(event, 'tabair', 'tab-button-air')">
+                        <div class="card-image custom-card-image" id="tile_air"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Luftschadstofftechnische
+                                Untersuchungen</h5>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+            <div class="col mb-4 align-items-stretch">
+                <div class="card custom-card border-0 rounded-0">
+                    <a id=sevesolink onclick="openTab(event, 'tabseveso', 'tab-button-seveso')">
+                        <div class="card-image custom-card-image" id="tile_seveso"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">SEVESO-Betriebe</h5>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+            <div class="col mb-4 align-items-stretch">
+                <div class="card custom-card border-0 rounded-0">
+                    <a id=checklink onclick="openTab(event, 'tabcheck', 'tab-button-check')">
+                        <div class="card-image custom-card-image" id="tile_check"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Wiederkehrende
+                                Überprüfungen</h5>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+            <div class="col mb-4 align-items-stretch">
+                <div class="card custom-card border-0 rounded-0">
+                    <a id=ippclink onclick="openTab(event, 'tabippc', 'tab-button-ippc')">
+                        <div class="card-image custom-card-image" id="tile_ippc"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">IPPC-Anlagen</h5>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="blocksatz">
+            Wir sind in Vorarlberg, Salzburg, Oberösterreich, Niederösterreich, Kärnten, Wien der Steiermark und im
+            Burgenland sowie in Deutschland tätig. Innerhalb Tirols werden ausschließlich Leistungen für öffentliche
+            Einrichtungen (z. B. für Gemeinden) angeboten.
+        </p>
+
+    </div>
+
+    <!--	Footer -->
+    <div id="footer-placeholder"></div>
+    <!-- --------------------------------------------------------------------------------- -->
+
 </div>
-</div>
-
-<!--	Footer -->
-<div class="footer ">
-  <p class="footer-p footer-contact">
-     <i class="fas fa-phone"></i> <a class="ref-contact" href="tel:+43 676 74 92 999">+43 676 74 92 999</a> &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-envelope"></i> <a class="ref-contact" href="mailto:info@ls2.at">info@ls2.at</a> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; <a class="mx-lg-2" href="#" id="tab-button-impressum" onclick="openTab(event, 'tabimpressum', 'tab-button-impressum')">Impressum</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a class="mx-lg-2" href="#" id="tab-button-dataprotection" onclick="openTab(event, 'tabdataprotection', 'tab-button-dataprotection')">Haftungsausschluss</a>
-  </p>
-  <p class="footer-p">
-  &copy 2023 LS2 Engineering
-  </p>
-</div>
-<!-- --------------------------------------------------------------------------------- -->
-
-
-
 </body>
 </html>
