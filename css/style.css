@@ -278,7 +278,7 @@ body, html {
 /* The actual timeline (the vertical ruler) */
 
 .custom-image {
-    height: 25vh;
+    height: 100%;
     position: relative;
     background-position: center;
     background-size: contain;
