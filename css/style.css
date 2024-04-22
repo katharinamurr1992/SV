@@ -144,7 +144,7 @@ body, html {
     color: white;
 }
 
-#procucts, #aboutme, #contact, #dataprotection, #contact, #air, #process, #explo, #check, #seveso, #ippc, #sound, #start, #impressum {
+#products, #aboutme, #contact, #dataprotection, #contact, #air, #process, #explo, #check, #seveso, #ippc, #sound, #start, #impressum {
     padding-top: 10vh;
 }
 
@@ -473,7 +473,7 @@ body, html {
     background-position: center;
 }
 
-#procucts {
+#products {
     border: 2px solid #0E452F;
     color: white;
     border-radius: 10px;
@@ -487,15 +487,17 @@ body, html {
 
 /* Über mich */
 .about-image {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    padding-top: 10px;
 }
 
 .about-image-simon {
-    background-position-y: 40px;
+    background-position-y: 1px;
     background-repeat: no-repeat;
     background-color: white;
 }
@@ -684,8 +686,33 @@ body, html {
     margin-right: 5px;
 }
 
+/********** Large devices for height only ***********/
+@media (min-height: 768px){
+    .custom-card-image {
+        height: 17vh;
+    }
+
+    .page-container {
+        min-height: 100vh;
+        width: 92%;
+        max-width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icon {
+        width: 6vh;
+        height: 6vh;
+    }
+
+    #products {
+        padding-top: 3vh;
+    }
+}
+
+
 /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 1200px){
     /*#frontpage-video {*/
     /*    height: 290px;*/
     /*    padding-bottom: 0;*/
