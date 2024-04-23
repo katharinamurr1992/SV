@@ -147,12 +147,12 @@ body, html {
     padding-top: 10vh;
 }
 
-#tab-button-impressum, #tab-button-dataprotection {
+#tab-button-impressum, #tab-button-dataprotection , #tab-button-dataprotection2 {
     text-decoration: none;
     color: inherit;
 }
 
-#tab-button-impressum:hover, #tab-button-dataprotection:hover {
+#tab-button-impressum:hover, #tab-button-dataprotection:hover, #tab-button-dataprotection2:hover {
     text-decoration: underline;
 }
 
