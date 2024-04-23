@@ -39,7 +39,7 @@
 
 
 body, html {
-    font-family: 'robotolight';
+    font-family: 'robotolight', sans-serif;
     font-size: 1.05rem;
     margin: 0;
     padding: 0;
@@ -291,7 +291,6 @@ body, html {
     width: 100%;
     margin: auto;
     background: white;
-    rounded: 0px;
 }
 
 .card-process:hover {
