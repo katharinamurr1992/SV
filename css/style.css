@@ -96,7 +96,6 @@ body, html {
     top: 0;
     position: fixed;
     width: 100%;
-
 }
 
 /* Navigation */
@@ -553,7 +552,7 @@ body, html {
     width: 30px;
 }
 
-.ref-contact {
+.ref-contact, .ref-services {
     text-decoration: none;
     color: inherit;
 }
@@ -811,7 +810,7 @@ body, html {
         padding-top: 5px;
     }
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Definiert drei Spalten mit gleicher Breite */
+        grid-template-columns: repeat(1, 1fr); /* Definiert drei Spalten mit gleicher Breite */
     }
 
     /*#frontpage-video {*/
