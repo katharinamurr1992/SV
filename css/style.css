@@ -167,20 +167,20 @@ body, html {
 
 }
 
-.h3-heading {
+.h2-heading {
     display: inline-block;
     vertical-align: middle;
 }
 
-.h3-heading-padding-top {
+.h2-heading-padding-top {
     padding-top: 8vh;
 }
 
-.h3-custom {
+.h2-custom {
     padding-bottom: 2vh;
 }
 
-.h2-heading {
+.h1-heading {
     padding-bottom: 2vh;
 }
 
@@ -539,7 +539,7 @@ body, html {
     border-color: white;
 }
 
-.custom-h3-example, .custom-div-example, .custom-div-ing {
+.custom-h2-example, .custom-div-example, .custom-div-ing {
     display: grid;
     align-content: center;
     margin: 0;
@@ -652,6 +652,11 @@ body, html {
     padding-left: 10px
 }
 
+.custom-table {
+    width: 100%;
+    border: 1px solid #c7d1d1;
+}
+
 .footer {
     /*display: flex;*/
     /*justify-content: space-between;*/
@@ -754,6 +759,11 @@ body, html {
         padding-right: 2px;
     }
 
+    .icon {
+        width: 7vh;
+        height: 7vh;
+    }
+
     /*.card-group {*/
     /*    display: flex;*/
     /*    flex-flow: column wrap;*/
@@ -774,6 +784,10 @@ body, html {
         grid-template-columns: repeat(2, 1fr); /* Definiert drei Spalten mit gleicher Breite */
     }
 
+    .icon {
+        width: 7vh;
+        height: 7vh;
+    }
 
     /*#frontpage-video {*/
     /*    height: 200px;*/
@@ -826,6 +840,10 @@ body, html {
         height: 50px;
     }
 
+    .icon {
+        width: 8vh;
+        height: 8vh;
+    }
 
 }
 
