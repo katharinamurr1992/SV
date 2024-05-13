@@ -164,7 +164,7 @@ body, html {
     padding-top: 1vh;
     padding-bottom: 1vh;
     border-bottom: 1.5px solid #0E452F;
-
+    font-size: calc(1.175rem + 1.5vw);
 }
 
 .h2-heading {
@@ -303,7 +303,6 @@ body, html {
 }
 
 
-
 #process-background {
     background-color: #c7d1d1;
     color: white;
@@ -407,6 +406,7 @@ body, html {
 /* Product */
 .custom-card-image {
     height: 25vh;
+    min-height: 150px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -545,6 +545,11 @@ body, html {
     margin: 0;
 }
 
+.custom-h2-example {
+    font-size: calc(1.125rem + .9vw);
+    padding-bottom: 2vh;
+}
+
 
 .contact-info {
     display: inline-block;
@@ -584,6 +589,22 @@ body, html {
     font-weight: 800;
 }
 
+/* Explosionsschutz Unterseiten */
+
+#tile_explob {
+    background-image: url('../files/Bild_Biogas.jpg');
+    background-position: center;
+}
+
+#tile_exploka {
+    background-image: url('../files/Bild_ARA.jpg');
+    background-position: center;
+}
+
+#tile_explowk {
+    background-image: url('../files/Bild_Waermepumpe_2.png');
+    background-position: center;
+}
 /* Footer */
 
 #main-container {

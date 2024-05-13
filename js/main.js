@@ -13,14 +13,14 @@
 // Link für überleitung zu Lärm
 // $(document).ready(function(){
 //   $('#soundlink').click(function(){
-//     $('#main-container').load('tabsound.html');
+//     $('#main-container').load('schalltechnische-untersuchungen.html');
 //   });
 // });
 //
 // // Link für überleitung zu Luft
 // $(document).ready(function(){
 //   $('#airlink').click(function(){
-//     $('#main-container').load('tabair.html');
+//     $('#main-container').load('luftschadstofftechnische-untersuchungen.html');
 //   });
 // });
 //
